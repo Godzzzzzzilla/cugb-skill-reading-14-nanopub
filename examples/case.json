@@ -1,0 +1,7 @@
+{
+ "case_id": "demo-nanopub-01",
+ "task": "Turn each finding into a nanopublication assertion: subject, relation, object, polarity, qualifiers, and an exact source range.",
+ "materials": ["findings.md"],
+ "creator": "https://orcid.org/0000-0000-0000-0000",
+ "output_contract": {"fields": ["nanopubs", "assertions", "counts", "evidence"]}
+}

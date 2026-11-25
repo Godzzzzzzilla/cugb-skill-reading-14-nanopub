@@ -1,0 +1,50 @@
+{
+ "checks": [
+  {
+   "id": "input-found",
+   "ok": true,
+   "detail": "1 text file(s)",
+   "weight": 1.0,
+   "critical": true
+  },
+  {
+   "id": "claims-found",
+   "ok": true,
+   "detail": "6 claim candidates",
+   "weight": 1.0,
+   "critical": true
+  },
+  {
+   "id": "triples-complete",
+   "ok": true,
+   "detail": "6/6 have subject+relation+object",
+   "weight": 1.0,
+   "critical": true
+  },
+  {
+   "id": "polarity-explicit",
+   "ok": true,
+   "detail": "6/6 carry a polarity",
+   "weight": 0.8,
+   "critical": false
+  },
+  {
+   "id": "evidence-verified",
+   "ok": true,
+   "detail": "6/6 assertions re-slice",
+   "weight": 1.0,
+   "critical": true
+  },
+  {
+   "id": "serialisation-complete",
+   "ok": true,
+   "detail": "every nanopublication carries head/assertion/provenance/pubinfo",
+   "weight": 1.0,
+   "critical": true
+  }
+ ],
+ "passed": 6,
+ "total": 6,
+ "ratio": 1.0,
+ "failed_critical": []
+}

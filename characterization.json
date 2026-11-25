@@ -1,0 +1,48 @@
+{
+ "deviations_from_paper": [
+  {
+   "target": "evidence anchors re-slice exactly",
+   "metric": "custom",
+   "reference_value": 1.0,
+   "actual_value": 1.0,
+   "score": 1.0,
+   "tolerance": 0.0,
+   "verifier_script": "scripts/verify.py",
+   "evidence_artifact": "result",
+   "explanation": "Every evidence item is a character range into an emitted text file; verify.py re-slices it and recomputes the share that still matches."
+  }
+ ],
+ "envelope": [
+  {
+   "condition": "findings with an explicit verb from the closed set",
+   "status": "in envelope",
+   "note": "6/6 triples on the demo, polarity explicit"
+  },
+  {
+   "condition": "nominalised claim (\"a 23.4% yield increase\")",
+   "status": "partial",
+   "note": "the first verb decides; a noun relation is read as the object of 'shows'"
+  },
+  {
+   "condition": "passive voice with an unstated agent",
+   "status": "partial",
+   "note": "subject is the grammatical subject; no guessing of the agent"
+  }
+ ],
+ "failure_modes": [
+  {
+   "mode": "verb outside the closed set",
+   "impact": "no triple; assertion kept with confidence=unspecified and listed in uncertainty"
+  },
+  {
+   "mode": "negation before the verb",
+   "impact": "polarity=negative, cue not folded into the subject"
+  },
+  {
+   "mode": "noun that looks like a verb (increase)",
+   "impact": "only chosen if no earlier verb exists"
+  }
+ ],
+ "sensitivity": [],
+ "note": "This is a skill-authoring challenge: the targets are the demonstration benchmark and the audit, not a paper's reported numbers."
+}

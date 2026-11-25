@@ -1,0 +1,120 @@
+{
+ "assertions": [
+  {
+   "@id": "http://example.org/assertion/1",
+   "subject": "Sparse routing",
+   "relation": "reduces",
+   "object": "inference cost by 0.7x on 32k-token contexts",
+   "polarity": "positive",
+   "qualifiers": {
+    "context": "32k-token contexts"
+   },
+   "evidence": {
+    "source": "inputs/findings.md",
+    "quote": "Sparse routing reduces inference cost by 0.7x on 32k-token contexts.",
+    "char_start": 12,
+    "char_end": 80,
+    "verified": true
+   },
+   "confidence": "asserted",
+   "evidence_id": "a1",
+   "nanopub": "http://example.org/nanopub/5bb7f72e95a57bf2"
+  },
+  {
+   "@id": "http://example.org/assertion/2",
+   "subject": "The router",
+   "relation": "increase",
+   "object": "perplexity on the validation split",
+   "polarity": "negative",
+   "qualifiers": {
+    "context": "the validation split"
+   },
+   "evidence": {
+    "source": "inputs/findings.md",
+    "quote": "The router does not increase perplexity on the validation split.",
+    "char_start": 81,
+    "char_end": 145,
+    "verified": true
+   },
+   "confidence": "asserted",
+   "evidence_id": "a2",
+   "nanopub": "http://example.org/nanopub/4494959e0a557674"
+  },
+  {
+   "@id": "http://example.org/assertion/3",
+   "subject": "Block-sparse attention",
+   "relation": "improves",
+   "object": "recall by 3.2 points over dense attention in our reproduction",
+   "polarity": "positive",
+   "qualifiers": {
+    "context": "our reproduction"
+   },
+   "evidence": {
+    "source": "inputs/findings.md",
+    "quote": "Block-sparse attention improves recall by 3.2 points over dense attention in our reproduction.",
+    "char_start": 146,
+    "char_end": 240,
+    "verified": true
+   },
+   "confidence": "asserted",
+   "evidence_id": "a3",
+   "nanopub": "http://example.org/nanopub/faf2dd92bda9ef02"
+  },
+  {
+   "@id": "http://example.org/assertion/4",
+   "subject": "Dropout of 0.1",
+   "relation": "stabilises",
+   "object": "training",
+   "polarity": "positive",
+   "qualifiers": {},
+   "evidence": {
+    "source": "inputs/findings.md",
+    "quote": "Dropout of 0.1 stabilises training but slows convergence by 12%.",
+    "char_start": 241,
+    "char_end": 305,
+    "verified": true
+   },
+   "confidence": "asserted",
+   "evidence_id": "a4",
+   "nanopub": "http://example.org/nanopub/4e077ac1156f02a8"
+  },
+  {
+   "@id": "http://example.org/assertion/5",
+   "subject": "The reported ceiling of 92.4%",
+   "relation": "reproduced",
+   "object": "the original schedule",
+   "polarity": "negative",
+   "qualifiers": {
+    "context": "the original schedule"
+   },
+   "evidence": {
+    "source": "inputs/findings.md",
+    "quote": "The reported ceiling of 92.4% was not reproduced under the original schedule.",
+    "char_start": 306,
+    "char_end": 383,
+    "verified": true
+   },
+   "confidence": "asserted",
+   "evidence_id": "a5",
+   "nanopub": "http://example.org/nanopub/a9f0571c62670133"
+  },
+  {
+   "@id": "http://example.org/assertion/6",
+   "subject": "Table 2",
+   "relation": "shows",
+   "object": "a 23.4% yield increase for the treatment group relative to the control",
+   "polarity": "positive",
+   "qualifiers": {},
+   "evidence": {
+    "source": "inputs/findings.md",
+    "quote": "Table 2 shows a 23.4% yield increase for the treatment group relative to the control.",
+    "char_start": 384,
+    "char_end": 469,
+    "verified": true
+   },
+   "confidence": "asserted",
+   "evidence_id": "a6",
+   "nanopub": "http://example.org/nanopub/09d8d414c2255acd"
+  }
+ ]
+}
